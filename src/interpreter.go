@@ -200,7 +200,7 @@ func handlePrint(args []string) {
 			} else {
 				// Stampa il risultato di un'espressione numerica
 				result := evaluateExpression([]string{arg})
-				fmt.Print(result)
+				fmt.Println(result)
 			}
 		}
 	}
