@@ -1,3 +1,0 @@
-10 LET X = 10
-20 PRINT X
-30 END

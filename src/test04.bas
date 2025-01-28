@@ -1,2 +1,0 @@
-10 PRINT "CIAO"
-20 END

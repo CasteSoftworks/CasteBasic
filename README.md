@@ -21,6 +21,24 @@ X MOD Y (if Y is 0 the program will exit and communicate the division by 0 error
 * Integers
 * Strings
 
+# NEED TO KNOW
+You have to specify a **line number** before each command, for example: 
+```
+10
+20
+30
+```
+```
+1
+2
+3
+```
+```
+5
+10
+15
+```
+
 ## COMMANDS
 - LET: sets and updates variables. Here are the examples:
     - LET X = 1 -- sets a variable X to 1
@@ -61,7 +79,7 @@ To handle cycles you have to use IF THEN ELSE and GOTO with relevant checks and 
 20 LET Y = X MOD 2
 30 IF Y = 0 THEN GOTO 40 ELSE GOTO 70
 40 PRINT X
-50 LET X = X + 1
+50 INPUT X
 60 GOTO 20
 70 PRINT "fuori ciclo"
 80 END
