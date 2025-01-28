@@ -1,12 +1,7 @@
-******************************************************************************
-
 # Caste Basic
 
-******************************************************************************
-
 ## SUPPORTED OPERATIONS
-
-The supported operations are the simple addition, subtraction, multiplication and division and the module.  
+The supported operations are the simple **integer** addition, subtraction, multiplication and division and the module.  
 ```
 X + 1
 X - 1
@@ -22,9 +17,11 @@ X / Y (if Y is 0 the program will exit and communicate the division by 0 error)
 X MOD 2
 X MOD Y (if Y is 0 the program will exit and communicate the division by 0 error)
 ```
+## SUPPORTED TYPES
+* Integers
+* Strings
 
 ## COMMANDS
-
 - LET: sets and updates variables. Here are the examples:
     - LET X = 1 -- sets a variable X to 1
     - LET X = X operation number -- sets X to the value its value modified by operation using number
@@ -36,9 +33,9 @@ X MOD Y (if Y is 0 the program will exit and communicate the division by 0 error
     - PRINT X operation Y -- prints the value of X modified by operation using the value of Y
     - PRINT "..." -- prints the content between the "" and prints a NEWLINE
 - INPUT: recives user input (numeric). Here are some examples:
-    - INPUT X -- saves the user input on the value X (can be created by the command if it does not previously exist)
+    - INPUT X -- saves the user input on the integer variable X (can be created by the command if it does not previously exist)
 - SINPUT: recives user input (string). Here are some examples:
-    - SINPUT X -- saves the user input on the value X (can be created by the command if it does not previously exist)
+    - SINPUT X$ -- saves the user input on the string variable X$ (can be created by the command if it does not previously exist)
 - GOTO: jumps to the specified line. Here is an example:
     - GOTO 30 -- jumps to line 30
 - END: ends the execution
@@ -47,7 +44,6 @@ X MOD Y (if Y is 0 the program will exit and communicate the division by 0 error
     - IF X <> 10 THEN GOTO 50 ELSE GOTO 190 -- checks if X is not 10 and either jumps to line 50 or line 190
 
 ## HOW TO DO CYCLES
-
 To handle cycles you have to use IF THEN ELSE and GOTO with relevant checks and operations.  
 ### FOR cycle
 ```
